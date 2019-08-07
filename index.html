@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="icon" href="img/meme.jpg">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Farro&display=swap" rel="stylesheet">
+
+      <title>Generador de memes</title>
+    </head>
+
+      <body>
+         <div id="blink"><center>Crea tu propio meme!</center></div>
+         <p>Lo único que tienes que hacer para
+            crear un nuevo meme es:</p>
+         <ol>
+            <li>Elegir una de las imagenes disponibles</li>
+            <li>Escribir un texto</li>
+            <li>Presiona <b>generar</b> </li>
+         </ol>
+    <!--Eleccion de img-->
+
+   <!-- Container para las imagenes y flechas-->
+     <div class="container">
+      <!-- Imagenes en grande con su numeración -->
+      <div class="container1">
+                  <!--img 1-->
+        <div class="mySlides" >
+           <div class="numbertext">1 / 6</div>
+                     <!--Texto-->
+               <div class="texto" >
+                     <h3>Ingrese texto para el meme:</h3>
+                     <h4>Superior:</h4>
+                     <input type="text" id="texto"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribir()">
+
+                     <h4>Inferior:</h4>
+                     <input type="text" id="textob"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribirB()">
+               </div><!--Fin del div texto-->
+                    <div class="crearmm">
+                       <img src="img/1.jpg" id="imagen" alt="Willy Wonka" title="Willy Wonka">
+                       <div class="texto-encima" id="meme"></div>
+                       <div class="texto-abajo" id="memeb"></div>
+                    </div>
+        </div>
+<!--img 2-->
+        <div class="mySlides">
+           <div class="numbertext">2 / 6</div>
+                     <!--Texto-->
+               <div class="texto" >
+                     <h3>Ingrese texto para el meme:</h3>
+                     <h4>Superior:</h4>
+                     <input type="text" id="texto1"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribir1()">
+
+                     <h4>Inferior:</h4>
+                     <input type="text" id="textob1"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribirB1()">
+               </div><!--Fin del div texto-->
+                    <div class="crearmm">
+                       <img src="img/7.jpg" id="imagen" alt="Bob Esponja" title="Bob Esponja">
+                       <div class="texto-encima" id="meme1"></div>
+                       <div class="texto-abajo" id="memeb1"></div>
+                    </div>
+        </div>
+
+<!--img 3-->
+        <div class="mySlides" >
+           <div class="numbertext">3 / 6</div>
+                     <!--Texto-->
+               <div class="texto" >
+                     <h3>Ingrese texto para el meme:</h3>
+                     <h4>Superior:</h4>
+                     <input type="text" id="texto2"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribir2()">
+
+                     <h4>Inferior:</h4>
+                     <input type="text" id="textob2"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribirB2()">
+               </div><!--Fin del div texto-->
+                    <div class="crearmm">
+                       <img src="img/3.jpg" id="imagen" alt="Toy Story" title="Buddy y Buzz">
+                       <div class="texto-encima" id="meme2"></div>
+                       <div class="texto-abajo" id="memeb2"></div>
+                    </div>
+        </div>
+<!--img 4-->
+        <div class="mySlides">
+           <div class="numbertext">4 / 6></div>
+                     <!--Texto-->
+               <div class="texto" >
+                     <h3>Ingrese texto para el meme:</h3>
+                     <h4>Superior:</h4>
+                     <input type="text" id="texto3"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribir3()">
+
+                     <h4>Inferior:</h4>
+                     <input type="text" id="textob3"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribirB3()">
+               </div><!--Fin del div texto-->
+                    <div class="crearmm">
+                       <img src="img/4.jpg" id="imagen" alt="El macho" title="El macho">
+                       <div class="texto-encima" id="meme3"></div>
+                       <div class="texto-abajo" id="memeb3"></div>
+                    </div>
+        </div>
+
+<!--img 5-->
+        <div class="mySlides">
+           <div class="numbertext">5 / 6</div>
+                     <!--Texto-->
+               <div class="texto" >
+                     <h3>Ingrese texto para el meme:</h3>
+                     <h4>Superior:</h4>
+                     <input type="text" id="texto4"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribir4()">
+                     <h4>Inferior:</h4>
+                     <input type="text" id="textob4"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribirB4()">
+               </div><!--Fin del div texto-->
+                    <div class="crearmm">
+                       <img src="img/5.jpg" id="imagen" alt="No me digas" title="No me digas">
+                       <div class="texto-encima" id="meme4"></div>
+                       <div class="texto-abajo" id="memeb4"></div>
+                    </div>
+        </div>
+
+<!--img 6-->
+        <div class="mySlides">
+           <div class="numbertext">6 / 6</div>
+                     <!--Texto-->
+               <div class="texto" >
+                     <h3>Ingrese texto para el meme:</h3>
+                     <h4>Superior:</h4>
+                     <input type="text" id="texto5"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribir5()">
+                     <h4>Inferior:</h4>
+                     <input type="text" id="textob5"  placeholder="texto" maxlength="30">
+                     <input type="button" id="generar" value="Generar" onclick="escribirB5()">
+               </div><!--Fin del div texto-->
+                    <div class="crearmm">
+                       <img src="img/6.png" id="imagen" alt="Decepción" title="Decepción">
+                       <div class="texto-encima" id="meme5"></div>
+                       <div class="texto-abajo" id="memeb5"></div>
+                    </div>
+        </div>
+      </div> <!--Cierre de container1,contiene a las imagenes grandes-->
+
+                            <!--Botones:siguiente/anterior -->
+                   <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                   <a class="siguiente" onclick="plusSlides(1)">&#10095;</a>
+
+                            <!--Plantillas-->
+                  <div class="caption-container">
+                      <p>Elija una imagen:</p>
+                  </div>
+<hr>
+  <!-- Imagenes carousel -->
+                    <div class="row">
+                       <div class="column">
+                         <img class="demo cursor" src="img/1.jpg" style="width:50%" onclick="currentSlide(1)">
+                       </div>
+                       <div class="column">
+                         <img class="demo cursor" src="img/7.jpg" style="width:50%" onclick="currentSlide(2)" >
+                       </div>
+                       <div class="column">
+                         <img class="demo cursor" src="img/3.jpg" style="width:50%" onclick="currentSlide(3)" >
+                       </div>
+                       <div class="column">
+                         <img class="demo cursor" src="img/4.jpg" style="width:50%" onclick="currentSlide(4)" >
+                       </div>
+                       <div class="column">
+                         <img class="demo cursor" src="img/5.jpg" style="width:50%" onclick="currentSlide(5)" >
+                       </div>
+                       <div class="column">
+                         <img class="demo cursor" src="img/6.png" style="width:50%" onclick="currentSlide(6)">
+                       </div>
+                    </div><!--cierre del row,este div contiene a las img miniaturas-->
+      </div><!--cierre del container,contenido del container1+row-->
+<hr>
+
+              <footer><p><i>Autor de la página: Varinia Quisbert<br>Division: 4to 2da <br>Escuela Tecnica 35 D.E 18 "Ing.Eduardo Latzina"</i> </P>
+                <a href="https://github.com/VariniaQ/tp" target="_blank">Link al repositorio</a>
+              </footer>
+      <script src="js/crearMM.js"></script>
+    </body>
+</html>
